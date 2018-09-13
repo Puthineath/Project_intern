@@ -17,9 +17,15 @@ Route::get('/', function () {
 // Route::get('master', function () {
 //     return view('master');
 // });
-Route::get('/layouts/home_page', function () {
-    return view('/layouts/home_page');
+Route::get('layouts/home_page', function () {
+    return view('layouts.home_page');
 });
+Route::resource('crops', 'CropController');
+
+Route::resource('employee','EmployeeController');
+
+Route::resource('inventory', 'InventoryController');
+
 
 Auth::routes();
 

@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateCropManagementsTable extends Migration
+class CreateInventoryManagementsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,16 +13,16 @@ class CreateCropManagementsTable extends Migration
      */
     public function up()
     {
-        Schema::create('crops', function (Blueprint $table) {
+        Schema::create('inventories', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('crop_name');
-            $table->string('season_name');
-            $table->string('process');
-            $table->string('season_manager');
-            $table->date('stated_date');
-            $table->date('end_date');
+            $table->string('product_name');
+            $table->string('unit_price');
+            $table->string('amount');
+            $table->string('total');
+            $table->date('created_date');
+            $table->date('expired_date');
             $table->string('description');
-            $table->string('crop_image');
+            $table->string('product_image');
             $table->timestamps();
 
         });
@@ -35,6 +35,6 @@ class CreateCropManagementsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('crop_managements');
+        Schema::dropIfExists('inventory_managements');
     }
 }

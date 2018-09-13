@@ -23,9 +23,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <body>
 
 
-	@include('header')
-
+	@include('layouts.header')
+	
 	@yield('home_page')
+
+	@yield('crop_create')
 
 
 	
@@ -55,5 +57,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			new gnMenu( document.getElementById( 'gn-menu' ) );
 		</script>
 			<!-- script-for-menu -->
+	@yield('crop_create')
+
+
 
 </html>

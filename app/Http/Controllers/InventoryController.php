@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Model\Crop;
+use App\Model\Inventory;
 
-class CropController extends Controller
+class InventoryController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,10 +16,10 @@ class CropController extends Controller
     {
         //
         // get all the nerds
-        $crops= Crop::all();
+        $inventories= Inventory::all();
 
         // load the view and pass the nerds
-        return View('crop_management.index',compact('crops')) ;
+        return View('inventory_management.index',compact('inventories')) ;
 
     }
 
@@ -31,7 +31,7 @@ class CropController extends Controller
     public function create()
     {
         //
-         return View('crop_management.create');
+         return View('inventory_management.create');
     }
 
     /**
@@ -43,9 +43,9 @@ class CropController extends Controller
     public function store(Request $request)
     {
         //
-        $crops = Crop::create($request->all());
+        $inventories = Inventory::create($request->all());
         // return view('crop.index');
-        return redirect()->route('crops.index');
+        return redirect()->route('inventory.index');
     }
 
     /**
@@ -57,9 +57,9 @@ class CropController extends Controller
     public function show($id)
     {
         //
-        $crops= Crop::find($id);
+        $inventories= Inventory::find($id);
 
-      return View('crop_management.show',compact('crops')) ;
+      return View('inventory_management.show',compact('inventories')) ;
 
     
     
@@ -74,8 +74,8 @@ class CropController extends Controller
     public function edit($id)
     {
         //
-        $crops = Crop::find($id);
-        return View('crop_management.edit',compact('crops'));
+        $inventories = Inventory::find($id);
+        return View('inventory_management.edit',compact('inventories'));
 
     }
 
@@ -89,8 +89,8 @@ class CropController extends Controller
     public function update(Request $request, $id)
     {
         //
-        Crop::find($id)->update($request->all());
-        return redirect('crops');
+        Inventory::find($id)->update($request->all());
+        return redirect('inventory');
     }
 
     /**
@@ -102,8 +102,8 @@ class CropController extends Controller
     public function destroy($id)
     {
         //
-        $crops = Crop::find($id);
-        $crops->delete();
-        return Redirect('crops');
+        $inventories = Inventory::find($id);
+        $inventories->delete();
+        return Redirect('inventory');
     }
 }
