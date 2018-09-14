@@ -1,3 +1,7 @@
+
+
+@section('create_inventory')
+
 <!DOCTYPE html>
 <html>
 <head>

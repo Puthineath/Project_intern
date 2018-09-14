@@ -238,6 +238,12 @@
 									</ul>
 					</li>
 
+					@yield('create_crop')
+
+					@yield('create_hr')
+
+					@yield('create_inventory')
+
 					<li class="second w3l_search">
 					 
 							<form action="#" method="post">

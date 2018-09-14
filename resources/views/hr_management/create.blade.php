@@ -1,3 +1,7 @@
+
+
+@section('create_hr')
+
 <!DOCTYPE html>
 <html>
 <head>

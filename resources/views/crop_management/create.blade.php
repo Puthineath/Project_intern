@@ -1,4 +1,4 @@
-@extends('layouts.menu')
+
 
 @section('crop_create')
 
@@ -62,5 +62,5 @@
 </div>
 
 </body>
-@include('layouts.menu')
+
 </html>
