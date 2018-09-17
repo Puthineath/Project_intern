@@ -1,3 +1,4 @@
+@section('inventory.show')
 <!DOCTYPE html>
 <html>
 <head>

@@ -1,6 +1,7 @@
+@extends('layouts.master')
 
 
-@section('create_inventory')
+@section('inventory_create')
 
 <!DOCTYPE html>
 <html>
@@ -16,6 +17,9 @@
     </title>
 </head>
 <body>
+    <br>
+    <br>
+    <br>
     <a href="{{route('inventory.index')}}" class="btn btn-primary">BACK</a>
     
     {!! Form::open(array('url' => 'inventory')) !!}

@@ -12,19 +12,19 @@
 						<nav class="gn-menu-wrapper">
 							<div class="gn-scroller scrollbar1">
 								<ul class="gn-menu agile_menu_drop">
-									<li><a href="main-page.html"> <i class="fa fa-tachometer"></i> Dashboard</a></li>
+									<li><a href="home_page.blade.php"> <i class="fa fa-tachometer"></i> Dashboard</a></li>
 									<li>
-										<a href="#"><i class="fa fa-cogs" aria-hidden="true"></i> Crop Management <i class="fa fa-angle-down" aria-hidden="true"></i></a> 
+										<a href="{{route('crops.index')}}"><i class="fa fa-cogs" aria-hidden="true"></i> Crop Management <i class="fa fa-angle-down" aria-hidden="true"></i></a> 
 										<ul class="gn-submenu">
-											<li class="mini_list_agile"><a href="buttons.html"><i class="fa fa-caret-right" aria-hidden="true"></i> Add Detail</a></li>
-											<li class="mini_list_w3"><a href="grids.html"> <i class="fa fa-caret-right" aria-hidden="true"></i> View</a></li>
+											<li class="mini_list_agile"><a href="{{route('crops.create')}}"><i class="fa fa-caret-right" aria-hidden="true"></i> Add Detail</a></li>
+											<li class="mini_list_w3"><a href="{{route('crops.index')}}"> <i class="fa fa-caret-right" aria-hidden="true"></i> View</a></li>
 										</ul>
 									</li>
 									<li>
 										<a href="#"> <i class="fa fa-file-text-o" aria-hidden="true"></i>Resource  <i class="fa fa-angle-down" aria-hidden="true"></i></a> 
 										<ul class="gn-submenu">
-											<li class="mini_list_agile"><a href="input.html"><i class="fa fa-caret-right" aria-hidden="true"></i> HR management </a></li>
-											<li class="mini_list_w3"><a href="validation.html"><i class="fa fa-caret-right" aria-hidden="true"></i> Inventory Management</a></li>
+											<li class="mini_list_agile"><a href=" {{ route('employee.create') }} "><i class="fa fa-caret-right" aria-hidden="true"></i> HR management </a></li>
+											<li class="mini_list_w3"><a href="{{ route('inventory.create') }}"><i class="fa fa-caret-right" aria-hidden="true"></i> Inventory Management</a></li>
 										</ul>
 									</li>
 									{{-- <li><a href="table.html"> <i class="fa fa-table" aria-hidden="true"></i> Tables</a></li>
@@ -238,11 +238,7 @@
 									</ul>
 					</li>
 
-					@yield('create_crop')
-
-					@yield('create_hr')
-
-					@yield('create_inventory')
+					
 
 					<li class="second w3l_search">
 					 

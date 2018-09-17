@@ -1,3 +1,5 @@
+@extends('layouts.master')
+@section('hr_create')
 <!DOCTYPE html>
 <html>
 <head>

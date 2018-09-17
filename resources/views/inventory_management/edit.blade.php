@@ -1,3 +1,4 @@
+@section('inventory_edit')
 <!DOCTYPE html>
 <html>
 <head>

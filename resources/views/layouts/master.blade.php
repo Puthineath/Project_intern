@@ -29,6 +29,29 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 	@yield('crop_create')
 
+	@yield('crops_index')
+
+	@yield('crops_edit')
+
+	@yield('crops_show')
+
+	@yield('hr_create')
+
+	@yield('hr_index')
+
+	@yield('hr_edit')
+
+	@yield('hr_show')
+
+	@yield('inventory_create')
+
+	@yield('inventory_edit')
+
+	@yield('inventory_index')
+
+	@yield('inventory_show')
+
+
 
 	
 </body>

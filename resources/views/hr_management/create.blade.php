@@ -1,5 +1,5 @@
 
-
+@extends('layouts.master')
 @section('create_hr')
 
 <!DOCTYPE html>
@@ -18,7 +18,7 @@
 <body>
 	<a href="{{route('employee.index')}}" class="btn btn-primary">BACK</a>
 	{!! Form::open(array('url' => 'employee')) !!}
-	
+	<br>
 
     <div class="form-group">
         {!! Form::label('first_name', 'First Name') !!}

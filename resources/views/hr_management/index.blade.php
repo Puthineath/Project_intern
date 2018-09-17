@@ -1,3 +1,5 @@
+@extends('layouts.master')
+@section('hr_index')
 <!DOCTYPE html>
 <html>
 <head>
